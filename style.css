@@ -1,0 +1,234 @@
+/* Fonte moderna e legível */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f11;
+    color: #e1e1e6;
+    padding: 2rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+a {
+    color: #4ea8de;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+header p {
+    margin-top: 15px;
+}
+
+.header-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.header-row img {
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.header-row img:hover {
+    transform: scale(1.05);
+}
+
+.header-row p {
+    font-size: 1.2rem;
+    color: #c4c4cc;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin: 0 auto;
+    text-align: center;
+    color: #d4d4d8;
+    max-width: 700px;
+}
+
+#github div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tech-badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tech-badges img {
+    height: 32px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project div {
+    background-color: #1c1c1f;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.project div:hover {
+    transform: scale(1.05);
+    background-color: #232328;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+}
+
+#contact {
+    margin-bottom: 2em;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #1c1c1f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #8e8e93;
+}
+
+footer div {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .tech-badges {
+        justify-content: center;
+    }
+}
+
+/* Telas a partir de 801px (tablets e notebooks pequenos) */
+@media (min-width: 801px) {
+    body {
+        font-size: 1.05rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Telas a partir de 1025px (laptops grandes e desktops) */
+@media (min-width: 1025px) {
+    .header-row {
+        width: 700px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-row p {
+        text-align: left;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .header-row img {
+        width: 220px;
+    }
+
+    body {
+        font-size: 1.1rem;
+    }
+}
+
+/* Telas a partir de 1281px (alta resolução) */
+@media (min-width: 1281px) {
+
+    body {
+        font-size: 1.15rem;
+    }
+
+    .header-row {
+        width: 1000px;
+    }
+
+    .header-row p {
+        margin: 50px;
+    }
+
+    .project div {
+        padding: 1.5rem 2rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+}
