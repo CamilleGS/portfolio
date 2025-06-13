@@ -104,6 +104,12 @@ p {
 
 .tech-badges img {
     height: 32px;
+    transition: transform 0.2s;
+    border-radius: 5px;
+}
+
+.tech-badges img:hover {
+    transform: scale(1.20);
 }
 
 .project {
@@ -150,6 +156,12 @@ p {
     justify-content: center;
 }
 
+.cardgit{
+    transition: transform 0.3s;
+}
+.cardgit:hover{
+    transform: scale(1.05);
+}
 ul {
     text-align: center;
     list-style: none;
